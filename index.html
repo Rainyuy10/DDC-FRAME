@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Frame Overlay with In-Frame Controls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DCC EVENT FRAMES</h1>
+    <input type="file" id="upload" accept="image/*">
+    
+    <div id="editor-container">
+      <div id="img-container">
+        <img id="userImage" src="" alt="Your Upload" style="display: none;">
+        
+     
+        <div id="controls">
+          <label for="resizeSlider">Resize:</label>
+          <input type="range" id="resizeSlider" min="0.5" max="2" step="0.01" value="1">
+          <label for="xSlider">X:</label>
+          <input type="range" id="xSlider" min="-200" max="200" step="1" value="0">
+          <label for="ySlider">Y:</label>
+          <input type="range" id="ySlider" min="-200" max="200" step="1" value="0">
+        </div>
+        
+     
+        <img id="frame" src="images/TOYX FRAME.png"Frame">
+      </div>
+    </div>
+    
+   
+    <button id="downloadBtn">Download Image</button>
+  </div>
+  
+  
+  <canvas id="downloadCanvas" width="2480" height="3508" style="display: none;"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>
